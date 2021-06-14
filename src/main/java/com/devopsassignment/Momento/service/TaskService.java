@@ -25,8 +25,9 @@ public class TaskService {
     }
 
     public List<Task> getTasks() {
-        System.out.println(taskFileRepository.getTasks());
-        return taskFileRepository.getTasks();
+        List<Task> taskList = taskFileRepository.getTasks();
+        System.out.println( taskList );
+        return taskList;
 //        return taskRepository.findAll();
     }
 
